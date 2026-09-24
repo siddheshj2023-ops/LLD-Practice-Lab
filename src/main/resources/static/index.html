@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LLD Practice Lab</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div><span class="eyebrow">CIPHERSCHOOLS • LLD PRACTICE</span><h1>LLD Practice Lab</h1><p>Practice. Submit. Get explainable feedback. Try again.</p></div><button onclick="loadHistory()">Attempt History</button></header>
+<main>
+<section id="problems" class="grid"></section>
+<section id="workspace" class="workspace hidden">
+<div id="problemDetail"></div>
+<label for="solution">Your design / solution</label>
+<textarea id="solution" placeholder="Describe classes, interfaces, responsibilities, relationships, behaviors and edge cases..."></textarea>
+<div class="actions"><button onclick="submitSolution()">Submit for evaluation</button><button class="ghost" onclick="back()">Back</button></div>
+<div id="feedback"></div>
+</section>
+<section id="history" class="workspace hidden"><h2>Attempt history</h2><div id="historyList"></div><button class="ghost" onclick="back()">Back to problems</button></section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
